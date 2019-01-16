@@ -1,9 +1,10 @@
 /**
    This sketch will its read own programmed flash memory and use the data to replicate itself onto a different Arduino (Nano) connected through SoftwareSerial.
+   Dependencies: SoftwareSerial
+   
    SK_LEN should store the sketch compiled length in bytes as displayed in the IDE after compile (Ctrl+R) (example: Sketch uses 6266 bytes (20%) of program storage space. Maximum is 30720 bytes.)
    Copier file uses SoftwareSerial (RX is digital pin 10, TX is digital pin 11) for programming the next Arduino in the chain (which uses Serial) and so on.
    The reset line to the next Arduio should use pin RESET_PIN (default digital pin 4).
-
 
   Sample avrdude communication:
 
