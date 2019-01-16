@@ -2,7 +2,7 @@
 Self replicate daisy-chained Arduino Nanos using SoftwareSerial
 
 
-This sketch will its read own programmed flash memory and use the data to replicate itself onto a different Arduino (Nano) connected through SoftwareSerial.
+This sketch will read its own programmed flash memory and use the data to replicate itself onto a different Arduino (Nano) connected through SoftwareSerial.
    
 ##### Dependencies: SoftwareSerial
 
