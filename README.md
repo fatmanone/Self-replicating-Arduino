@@ -80,6 +80,8 @@ The reset line to the next Arduino should use pin `RESET_PIN` (default digital p
 #
 * `  > 0x51 0x20 //Quit`
 * `  < 0x14 0x10`
+#
 
+####Fritzing sketch 
 
 ![fritzing](https://raw.githubusercontent.com/fatmanone/self_replicating_arduino/master/nano%20self%20replicating_bb.png)
