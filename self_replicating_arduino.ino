@@ -80,7 +80,7 @@
 
 
 */
-#define SK_LEN 6196
+#define SK_LEN 6272
 #define RESET_PIN 4
 
 /**
@@ -105,7 +105,8 @@ void setup() {
 }
 
 void loop() {
-  _led(100, 200, 3);
+  _led(100, 200, 1);
+  _led(50, 20, 3);
   delay(200);
 }
 

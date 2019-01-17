@@ -46,7 +46,7 @@ int resetPin = RESET_PIN;
 // If the target board is already powered, then just connect their two
 // GND pins together, otherwise connect their +5V pins together as well
 
-int  i,  start, end, address;
+unsigned int  i,  start, end, address;
 byte j, groove = 30, buff[128], buffLength, laddress, haddress, readBuff[16], preBuff, readBuffLength;
 bool began = 0;
 
