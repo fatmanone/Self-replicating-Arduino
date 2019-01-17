@@ -6,6 +6,8 @@
    Copier file uses SoftwareSerial (RX is digital pin 10, TX is digital pin 11) for programming the next Arduino in the chain (which uses Serial) and so on.
    The reset line to the next Arduio should use pin RESET_PIN (default digital pin 4).
 
+   To begin program the next Arduino, send "prg" to the first one over Serial (115200 baud).
+
   Sample avrdude communication:
 
   > 0x30 0x20
@@ -78,7 +80,7 @@
 
 
 */
-#define SK_LEN 6364
+#define SK_LEN 6196
 #define RESET_PIN 4
 
 /**
@@ -99,12 +101,12 @@ void _led(int p1, int p2, int c) {
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
   util_setup();//initialize Serial for commands processing
-  Serial.begin(57600);
+  Serial.begin(115200);
 }
 
 void loop() {
-  _led(100, 50, 4);
-  delay(100);
+  _led(100, 200, 3);
+  delay(200);
 }
 
 
